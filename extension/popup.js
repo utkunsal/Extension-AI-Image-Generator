@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   generateButton.addEventListener("click", async function() {
       const loadingIndicator = document.getElementById("loading");
       loadingIndicator.style.display = "block"; 
+      generatedImage.style.display = "none";
 
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
           chrome.tabs.sendMessage(tabs[0].id, { action: "getTopWords" }, async function(response) {
