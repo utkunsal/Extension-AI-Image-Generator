@@ -1,0 +1,82 @@
+body {
+  width: 550px;
+  background: linear-gradient(45deg, #1e1833, #242445e9, #271c3d);  
+}
+
+p {
+  color: #fff;
+  text-align: center;
+}
+
+#content-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#loading::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4f4f4f;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#input-container {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+label {
+  margin-left: 10px;
+  width: 10%;
+  color: #fff;
+}
+
+#additional-prompts {
+  margin-right: 10px;
+  margin-left: 5px;
+  width: 47%;
+  border-radius: 5px;
+  background-color: #2522328e;
+  color: #ffffffc5;
+  border: none;
+  outline: none;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+#additional-prompts::placeholder {
+  color: #ffffff89;
+}
+
+#generate-button {
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  color: #000;
+  border: none;
+  outline: none;
+  padding-inline: 11px;
+  padding-block: 4px;
+  cursor: pointer; 
+}
+
+#generated-image {
+  border-radius: 5px;
+}

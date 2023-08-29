@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <p>Welcome! This extension generates AI images using the most frequent words found on the page.</p>
+  <div id="content-container">
+    <div id="input-container">
+      <label>Additional Prompts:</label>
+      <input type="text" id="additional-prompts" placeholder="Enter additional prompts">
+      <button id="generate-button">Generate Image</button>
+    </div>
+    <div id="loading"></div>
+    <img id="generated-image" style="max-width: 100%;" />
+    <p id="error-message"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
